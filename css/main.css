@@ -1,0 +1,168 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+header{
+	background: url(../img/bg-header.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	
+}
+a{
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-weight:600;
+}
+a:hover,
+a:active,
+a:focus{
+	color: black;
+	transition: .5s;
+}
+.btn:focus,
+.btn:hover {
+   color: white;
+   border-color: currentColor;
+   background-color: #9555af;
+   outline:none;
+}
+button:active {
+   transform: translateY(1px);
+   filter: saturate(150%);
+}
+button{
+	cursor: pointer;
+	color: #fff;
+}
+.current-link{
+	color:rgb(0,0,0);
+}
+.container{
+	width: 1440px;
+	margin: 0 auto;
+}
+.header-logo{
+	margin-top:50px;
+}
+.header-bar{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:140px;
+}
+.menu-nav{
+	display: flex;
+	list-style-type: none;
+	margin-top: 55px;
+}
+.menu-nav li{
+	margin-right: 50px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.signup{
+	display:inline-block;
+	border: 1px solid white;
+	background:inherit;
+	height:25px;
+	color:white;
+	width:80px;
+	margin-top:55px;
+
+}
+.signup:hover{
+	color:yellow;
+	border:1px solid yellow;
+	transition: .5s;
+}
+.about{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 180px;
+}
+.offer{
+	width: 600px;
+	color:white;
+}
+.offer h1{
+	font-size: 55px;
+	line-height: 65px;
+	font-weight: 800;
+	text-transform: uppercase;
+
+	margin: 0;
+	margin-bottom: 10px;
+}
+.offer p{
+	font-size: 18px;
+	line-height: 35px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.btn-buy{
+	font-size: 15px;
+	font-family: Roboto;
+
+	background: #061e37;
+	border: 1px solid black;
+	border-radius: 5px ;
+	padding: 20px 40px;
+	margin-right: 30px;
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
+
+}
+.btn-try{
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+
+	padding: 20px 30px;
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
+}
+.video-youtube{
+	border: 1px solid black;
+	border-radius: 2px ;
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
+}
+.advantages{
+	background-color: #fff;
+	padding-top: 90px;
+}
+.easy{
+	text-align: center;
+	
+	margin-bottom: 52px;
+}
+.easy h1{
+	font-weight: semi-bold;
+	font-size: 45px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.easy h2{
+	margin: 0;
+	color: #b0bec5;
+	margin-bottom: 15px;
+}
+.easy span{
+	font-size:15px;
+	line-height: 25px;
+	color: #b0bec5;
+}
+.items{
+	display: flex;
+	justify-content: space-between;
+}
