@@ -143,8 +143,8 @@ button{
 }
 .easy{
 	text-align: center;
-	
-	margin-bottom: 52px;
+
+	margin-bottom: 90px;
 }
 .easy h1{
 	font-weight: semi-bold;
@@ -153,8 +153,9 @@ button{
 	margin-bottom: 15px;
 }
 .easy h2{
-	margin: 0;
 	color: #b0bec5;
+
+	margin: 0;
 	margin-bottom: 15px;
 }
 .easy span{
@@ -165,4 +166,55 @@ button{
 .items{
 	display: flex;
 	justify-content: space-between;
+}
+.items span{
+	font-size:15px;
+	color: #c9d3d7;
+	line-height: 20px;
+}
+.something{
+	text-align: center;
+	min-width: 350px;
+	margin-bottom: 72px;
+}
+.btn-started{
+	font-weight: bold;
+	font-size: 15px;
+	color:  #fff;
+	
+	padding: 20px 30px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	
+	background: #1de9b6;
+	border: 1px solid #1de9b6;
+	border-radius: 5px;
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
+	display: block;
+}
+.statistics{
+	display: flex;
+}
+.statistics div{
+	color: white;
+	font-weight: 800 ;
+	font-size: 20px;
+	line-height: 25px;
+
+	width: 25%;
+	text-align: center;
+
+
+}
+.statistics-bussiness{
+	background-color: #80d8ff;
+}
+.statistics-downloads{
+	background-color: #82b1ff;
+}
+.statistics-free-installs{
+	background-color: #b388ff;
+}
+.statistics-pro-users{
+	background-color: #ea80fc;
 }
