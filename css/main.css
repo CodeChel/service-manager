@@ -154,7 +154,7 @@ button{
 }
 .easy h2{
 	color: #b0bec5;
-
+	font-size: 25px;
 	margin: 0;
 	margin-bottom: 15px;
 }
@@ -169,7 +169,7 @@ button{
 }
 .items span{
 	font-size:15px;
-	color: #c9d3d7;
+	color: #78909c;
 	line-height: 20px;
 }
 .something{
@@ -202,9 +202,12 @@ button{
 	line-height: 25px;
 
 	width: 25%;
-	text-align: center;
+	min-height: 150px;
+	display: flex;
+	justify-content: center;
+  align-items: center; 
 
-
+  margin-bottom: 95px;
 }
 .statistics-bussiness{
 	background-color: #80d8ff;
@@ -217,4 +220,54 @@ button{
 }
 .statistics-pro-users{
 	background-color: #ea80fc;
+}
+.statistics-bussiness:before,
+.statistics-downloads:before,
+.statistics-free-installs:before,
+.statistics-pro-users:before{
+	content: ' ';
+	
+	border-radius: 50%;
+	width: 60px;		
+	height: 60px;
+	background:  #fff  no-repeat center;
+
+	margin-right: 20px;
+}
+.statistics-bussiness:before{
+	background-image: url(../img/business.png);
+}
+.statistics-free-installs:before{
+	background-image: url(../img/person.png);
+}
+.statistics-downloads:before,
+.statistics-pro-users:before{
+	background-image: url(../img/file_download.png);
+}
+.services{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.services-header p{
+	font-size: 15px;
+	line-height: 25px;
+	color: #b0bec5
+}
+.services-header h1{
+	font-size: 45px;
+	margin: 0;
+}
+.services ul{
+	display: block;
+}
+.services-header{
+	margin-bottom: 45px;
+}
+.open {
+	display: block;
+}
+.open{
+	width: 800px;
 }
