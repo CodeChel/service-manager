@@ -247,27 +247,142 @@ button{
 .services{
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	
+	
+}
+.services-header{
 	justify-content: center;
+	text-align: center;
 }
 .services-header p{
 	font-size: 15px;
 	line-height: 25px;
 	color: #b0bec5
 }
+
 .services-header h1{
 	font-size: 45px;
 	margin: 0;
 }
 .services ul{
-	display: block;
+	display: flex;
+	flex-direction: column;
+	
+	list-style-type: none;
+	margin: 0 auto;
 }
 .services-header{
 	margin-bottom: 45px;
 }
-.open {
-	display: block;
-}
 .open{
+	display: block;
+	border-radius: 6px;
 	width: 800px;
+	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
+	padding: 0px 30px 0px 25px;
+	margin-bottom: 25px;	
+	line-height: 25px;
+	font-size: 15px;
+}
+.open h3{
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+}
+.open-block{
+	margin-bottom: 34px;
+	display: none;
+}
+.open-block:before{
+	content: '';
+	background-size: cover;
+	width: 250px;	
+	min-height: 150px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.open-block-1:before{
+	background-image: url(../img/Rounded.jpg);
+}	
+.open-block-2:before{
+		background-image: url(../img/inbox.jpg);
+}	
+.open-block-3:before{
+	background-image: url(../img/team.jpg);
+}
+.open-block-4:before{
+	background-image: url(../img/settings-garold.jpg);
+}
+.open-block-5:before{
+	background-image: url(../img/feed-garold.jpg);	
+}
+.open h3{
+	display: block;
+	position: relative;
+}
+.open h3:after{
+	content: '';
+	background-image: url(../img/arrow_drop_down.png);
+
+	width: 11px;
+	height: 6px;
+	display: inline-block;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.decor-items-1:before{
+	content: '';
+	background-image: url(../img/trending_up.png);
+
+	width: 18px;
+	height: 11px;
+	display: inline-block;
+
+	margin-right: 22px;	
+}
+.decor-items-2:before{
+	content: '';
+	background-image: url(../img/mail.png);
+
+	width: 18px;
+	height: 14px;
+	display: inline-block;
+
+	margin-right: 22px;	
+}
+.decor-items-3:before{
+	content: '';
+	background-image: url(../img/group.png);
+
+	width: 20px;
+	height: 12px;
+	display: inline-block;
+
+	margin-right: 22px;	
+}
+
+.decor-items-4:before{
+	content: '';
+	background-image: url(../img/settings.png);
+
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+
+	margin-right: 22px;	
+}
+
+.decor-items-5:before{
+	content: '';
+	background-image: url(../img/rss_feed.png);
+
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+
+	margin-right: 22px;	
 }
