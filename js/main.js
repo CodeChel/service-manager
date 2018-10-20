@@ -1,11 +1,18 @@
 
-var liHiden = document.getElementsByClassName('.open ');
-var hidenElement = document.getElementsByClassName('.open-block');
-function toggle(el) {
-  el.style.display = (el.style.display == 'none') ? 'block' : 'none';
-}
+var li_Hiden = document.getElementsByClassName("accordion");
+var i;
 
-liHiden.onclick = function() {
+for (i = 0; i <  li_Hiden.length; i++)  {
+ 	 li_Hiden[i].addEventListener("click", function() {
+ 	 	
 
-	hidenElement.style.display = toggle(hidenElement);
+ 	 	var panel = this.nextElementSibling;
+ 	 	if (panel.style.maxHeight) {
+ 	 		panel.style.maxHeight = null;
+ 	 	}
+ 	 	else{
+ 	 		panel.style.maxHeight = panel.scrollHeight + "px";
+ 	 	}
+
+ 	 });
 }

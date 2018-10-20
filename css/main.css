@@ -257,7 +257,8 @@ button{
 .services-header p{
 	font-size: 15px;
 	line-height: 25px;
-	color: #b0bec5
+	color: #b0bec5;
+
 }
 
 .services-header h1{
@@ -269,7 +270,7 @@ button{
 	flex-direction: column;
 	
 	list-style-type: none;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 }
 .services-header{
 	margin-bottom: 45px;
@@ -279,7 +280,7 @@ button{
 	border-radius: 6px;
 	width: 800px;
 	box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.32);
-	padding: 0px 30px 0px 25px;
+	
 	margin-bottom: 25px;	
 	line-height: 25px;
 	font-size: 15px;
@@ -288,20 +289,31 @@ button{
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: bold;
-	display: inline-block;
+	padding: 18px 30px 18px 25px;
+	margin: 0;
+	
 }
 .open-block{
-	margin-bottom: 34px;
-	display: none;
+	
+	transition: max-height 0.2s ease-out;
+	max-height: 0;
+	overflow: hidden;
+	padding-left: 25px;
+	padding-right: 30px;
+}
+.open-block p{
+	margin-top: 0px;
+	margin-bottom: 22px;
 }
 .open-block:before{
 	content: '';
 	background-size: cover;
 	width: 250px;	
 	min-height: 150px;
-	display: block;
+	
 	float: left;
 	margin-right: 20px;
+	border-radius: 4px;
 }
 .open-block-1:before{
 	background-image: url(../img/Rounded.jpg);
@@ -318,11 +330,12 @@ button{
 .open-block-5:before{
 	background-image: url(../img/feed-garold.jpg);	
 }
-.open h3{
+.accordion{
 	display: block;
 	position: relative;
+	cursor: pointer;
 }
-.open h3:after{
+.accordion:after{
 	content: '';
 	background-image: url(../img/arrow_drop_down.png);
 
@@ -331,8 +344,8 @@ button{
 	display: inline-block;
 
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 25px;
+	right: 25px;
 }
 .decor-items-1:before{
 	content: '';
@@ -385,4 +398,61 @@ button{
 	display: inline-block;
 
 	margin-right: 22px;	
+}
+.active	{
+	color: red;
+}
+.reviews{
+	background: url(../img/BG.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 35px;
+}
+.reviews>div{
+	display: flex;
+	justify-content: space-between;
+}
+.what-say {
+	margin-top: 130px;
+	width: 520px;
+	color: #fff;
+}
+.what-say h3{
+	margin: 0;
+	font-size: 45px;
+	font-weight: semi-bold;
+	
+	margin-bottom: 25px;
+}
+.what-say p{
+	line-height: 25px;
+	margin-bottom: 78px;
+}
+p+.btn-started{
+	margin-right: 0;
+	margin-left: 0;
+	background-color:  #061e37;
+	border: 1px solid black;
+	text-transform: uppercase;
+}
+.comments{
+	width: 50%;
+	
+}
+.comment-1{
+	padding: 30px 60px 30px 27px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.author-comment{
+	color: #061e37;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.comment-1 p{
+	font-size: 15px;
+	line-height: 25px;
+	font-style: oblique;
+	color: #78909c;
 }
