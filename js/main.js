@@ -16,3 +16,18 @@ for (i = 0; i <  li_Hiden.length; i++)  {
 
  	 });
 }
+
+var btn_up = document.querySelector('.btn-up');
+var btn_down = document.querySelector('.btn-down');
+var count;
+
+var total_comment =  document.querySelectorAll('.comment');
+
+btn_down.addEventListener('click', function () {
+	for (count = 0; count < total_comment.length; count++) {
+				if (total_comment[count].style.order) {
+			total_comment[count].style.order = count + 3;
+			return;
+		}
+}
+})

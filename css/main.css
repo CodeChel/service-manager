@@ -437,12 +437,14 @@ p+.btn-started{
 }
 .comments{
 	width: 50%;
-	
+
 }
-.comment-1{
+.comment{
 	padding: 30px 60px 30px 27px;
 	background-color: #fff;
 	border-radius: 4px;
+	margin-bottom: 70px;
+
 }
 .author-comment{
 	color: #061e37;
@@ -450,9 +452,29 @@ p+.btn-started{
 	line-height: 25px;
 	font-weight: bold;
 }
-.comment-1 p{
+.comment p{
 	font-size: 15px;
 	line-height: 25px;
 	font-style: oblique;
 	color: #78909c;
+
+}
+.slider{
+	display: flex;
+	height: 490px;
+	overflow: hidden;
+	position: relative;
+	flex-direction: column;
+}
+.FIRST{
+	order:0;
+}
+.SECOND{
+	order: 1;
+}
+.THIRD{
+	order: 2;
+}
+.FOURTH{
+	order:3;
 }
