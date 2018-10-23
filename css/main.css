@@ -443,38 +443,56 @@ p+.btn-started{
 	padding: 30px 60px 30px 27px;
 	background-color: #fff;
 	border-radius: 4px;
-	margin-bottom: 70px;
-
+	position: absolute;
 }
 .author-comment{
 	color: #061e37;
 	font-size: 18px;
 	line-height: 25px;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 .comment p{
 	font-size: 15px;
 	line-height: 25px;
 	font-style: oblique;
 	color: #78909c;
-
+	
+  margin: 0;
 }
 .slider{
-	display: flex;
-	height: 490px;
+	min-height: 400px;
 	overflow: hidden;
 	position: relative;
-	flex-direction: column;
 }
 .FIRST{
-	order:0;
+	top: -240px;
 }
 .SECOND{
-	order: 1;
+	top:0px;
 }
 .THIRD{
-	order: 2;
+	top:240px;
 }
 .FOURTH{
-	order:3;
+	top:480px;
+}
+.btn-up{
+	width: 23px;
+	height: 14px;
+	
+	background-image: url(../img/keyboard_arrow_up.png);
+
+	margin-bottom: 30px;
+}
+.btn-down{
+		width: 23px;
+	height: 15px;
+	
+	background-image: url(../img/keyboard_arrow_down.png);
+	padding: 0;
+	font: inherit;
+  color: inherit;
+
+	margin-top: 30px;
 }
