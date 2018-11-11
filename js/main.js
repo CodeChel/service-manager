@@ -27,16 +27,20 @@ var total_comment =  document.querySelectorAll('.comment');
 function test () {
 
 														if( getComputedStyle(total_comment[0]).top == '0px' ){
-				 	 											btn_up.style.display = 'none';
+				 	 											btn_up.disabled = true;
+				 	 											btn_up.style.backgroundImage = "url(img/keyboard_arrow_up_grey.png)";
 				 	 										}
 				 	 										else {
-				 	 											btn_up.style.display = 'block';
+				 	 											btn_up.disabled = false;
+				 	 											btn_up.style.backgroundImage = "url(img/keyboard_arrow_up.png)";
 				 	 										}
 				 	 										if( getComputedStyle(total_comment[total_comment.length-1]).top == '240px' ){
-				 	 											btn_down.style.display = 'none';
+				 	 											btn_down.disabled = true;
+				 	 											btn_down.style.backgroundImage = "url(img/keyboard_arrow_down_grey.png)";
 				 	 										}
 				 	 										else {
-				 	 											btn_down.style.display = 'block';
+				 	 											btn_down.disabled = false;
+				 	 											btn_down.style.backgroundImage = "url(img/keyboard_arrow_down.png)";
 				 	 										}
 }
 									

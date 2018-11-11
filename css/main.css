@@ -18,16 +18,23 @@ header{
 	background-size: cover;
 	
 }
-a{
+.menu-nav a{
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-weight:600;
 }
-a:hover,
-a:active,
-a:focus{
+.menu-nav a:hover,
+.menu-nav a:active,
+.menu-nav a:focus{
 	color: black;
 	transition: .5s;
+}
+.visually-hidden{
+	 position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .btn:focus,
 .btn:hover {
@@ -43,8 +50,9 @@ button:active {
 button{
 	cursor: pointer;
 	color: #fff;
+
 }
-.current-link{
+.menu-nav .current-link{
 	color:rgb(0,0,0);
 }
 .container{
@@ -80,8 +88,8 @@ button{
 
 }
 .signup:hover{
-	color:yellow;
-	border:1px solid yellow;
+	color: yellow;
+	border: 1px solid yellow;
 	transition: .5s;
 }
 .about{
@@ -240,9 +248,12 @@ button{
 .statistics-free-installs:before{
 	background-image: url(../img/person.png);
 }
-.statistics-downloads:before,
-.statistics-pro-users:before{
+.statistics-downloads:before
+{
 	background-image: url(../img/file_download.png);
+}
+.statistics-pro-users:before{
+	background-image: url(../img/file_download_pink.png);
 }
 .services{
 	display: flex;
@@ -436,14 +447,19 @@ p+.btn-started{
 	text-transform: uppercase;
 }
 .comments{
-	width: 50%;
-
+	width: 52%;
+	position: relative;
 }
 .comment{
 	padding: 30px 60px 30px 27px;
 	background-color: #fff;
 	border-radius: 4px;
+	
+	width: 85%;
+	margin-left: auto;
+
 	position: absolute;
+	right: 0;
 }
 .author-comment{
 	color: #061e37;
@@ -465,34 +481,108 @@ p+.btn-started{
 	overflow: hidden;
 	position: relative;
 }
-.FIRST{
+.first{
 	top: -240px;
 }
-.SECOND{
+.second{
 	top:0px;
 }
-.THIRD{
+.third{
 	top:240px;
 }
-.FOURTH{
+.fourth{
 	top:480px;
 }
 .btn-up{
 	width: 23px;
-	height: 14px;
+	height: 15px;
 	
 	background-image: url(../img/keyboard_arrow_up.png);
-
+	background-position: center;
+	bacground-size: cover;
+	border: none;
+	background-color: unset;
+	outline: none;
+	margin-left: 55%;
 	margin-bottom: 30px;
 }
 .btn-down{
-		width: 23px;
+	width: 23px;
 	height: 15px;
+	background-color: unset;
 	
-	background-image: url(../img/keyboard_arrow_down.png);
-	padding: 0;
-	font: inherit;
-  color: inherit;
 
+	background-image: url(../img/keyboard_arrow_down.png);
+	background-position: center;
+	bacground-size: cover;
+	border: none;	
+	outline: none;
+	
+	margin-left: 55%;
 	margin-top: 30px;
+}
+.first::before,
+.second::before,
+.third::before,
+.fourth::before{
+	content: '';
+
+	position: absolute;
+	display: inline-block;
+	background-image: url(../img/icon-comments-1.png);
+	background-position: center;
+	width: 60px;
+	height: 70px;
+
+	left: -100px;
+	top: 50px;
+}
+.first::before{
+	background-image: url(../img/icon-comments-2.png);
+}
+.third::before{
+	background-image: url(../img/icon-comments-2.png);
+}
+.team{
+	text-align: center;
+	padding-top: 95px;
+}
+.team h1{
+	margin: 0;
+	font-weight: semi-bold ;
+	font-size: 45px;
+}
+.team > p{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #b0bec5;
+	line-height: 25px;
+	margin-bottom: 75px;
+}
+.member-1 div{
+	background-image: url(../img/member-1.png);
+	width: 200px;
+  height: 200px;
+  margin: 0 auto 35px;
+  background-size: cover;
+  border: 20px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 26px -2px rgba(0, 0, 0, 0.1),
+  inset 0px 0px 10px 6px;
+}
+.member-name{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 18px;
+	display: block;
+}
+.about-member{
+	width: 600px;
+	margin: 0 auto 30px;
+	line-height: 25px;
+	color: #90a4ae;
+}
+.social-links{
+	list-style-type: none;
+	color:black;
 }
