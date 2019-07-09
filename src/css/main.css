@@ -555,7 +555,7 @@ button{
 	border-radius: 4px;
 	
 	width: 85%;
-	height: 180px;
+	height: auto;
 
 	margin-left: auto;
 
@@ -566,9 +566,7 @@ button{
 
 	box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-.comment:last-child{
-	margin-bottom: 0px;
-}
+
 .author-comment{
 	color: #061e37;
 	font-size: 18px;

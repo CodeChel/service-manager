@@ -9,15 +9,14 @@ import "./css/main.css";
 import "./css/normalize.css";
 import {simpleAccordion} from './accordion';
 import {commentSlider} from './comment-slider';
-import { teamSlider } from "./team-slider";
-import { humburger } from "./humburger";
+import {teamSlider} from "./team-slider";
+import {humburger} from "./humburger";
 
 
 simpleAccordion();
 commentSlider();
 teamSlider();
 humburger();
-
 
 
 window.onscroll =  () => {
